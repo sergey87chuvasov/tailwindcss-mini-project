@@ -5,11 +5,43 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./css/main.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;500;700;900&display=swap" rel="stylesheet">
   <title>Tailwind mini-project</title>
 </head>
 <body>
-   <h1 class="text-3xl font-bold underline">
-    Hello world!
-  </h1>
+  <header class="relative">
+    <div class="container">
+      <nav class="flex justify-between items-center pt-[26px]">
+        <a href="#"><img src="./img/logo.svg" alt="logo pic"></a>
+        <ul class="flex gap-12 md:hidden">
+          <li><a href="#" class="font-medium text-xl text-lightblack hover:text-darkred transition-colors lg:text-base">About</a></li>
+          <li><a href="#" class="font-medium text-xl text-lightblack  hover:text-darkred transition-colors lg:text-base">Services</a></li>
+          <li><a href="#" class="font-medium text-xl text-lightblack  hover:text-darkred transition-colors lg:text-base">Case Studies</a></li>
+          <li><a href="#" class="font-medium text-xl text-lightblack  hover:text-darkred transition-colors lg:text-base">Careers</a></li>
+          <li><a href="#" class="font-medium text-xl text-lightblack  hover:text-darkred transition-colors lg:text-base">Blog</a></li>
+        </ul>
+
+        <ul id="menu" class="hidden absolute left-6 right-6 top-24 bg-lightred flex-col items-center">
+          <li><a href="#" class="block py-4 text-white">About</a></li>
+          <li><a href="#" class="block py-4 text-white">Services</a></li>
+          <li><a href="#" class="block py-4 text-white">Case Studies</a></li>
+          <li><a href="#" class="block py-4 text-white">Careers</a></li>
+          <li><a href="#" class="block py-4 text-white">Blog</a></li>
+        </ul>
+
+        <!-- burger button -->
+        <button class="burger hidden md:block">
+          <span class="burger-line top-line"></span>
+          <span class="burger-line mid-line"></span>
+          <span class="burger-line bottom-line"></span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <script src="./js/main.js" ></script>
+   
 </body>
 </html>
