@@ -638,6 +638,18 @@ body {
   margin-top: 10px;
 }
 
+.mt-4 {
+  margin-top: 1rem;
+}
+
+.mt-3 {
+  margin-top: 0.75rem;
+}
+
+.mt-2 {
+  margin-top: 0.5rem;
+}
+
 .block {
   display: block;
 }
@@ -662,6 +674,10 @@ body {
   width: 450px;
 }
 
+.w-full {
+  width: 100%;
+}
+
 .max-w-2xl {
   max-width: 42rem;
 }
@@ -672,6 +688,10 @@ body {
 
 .max-w-sm {
   max-width: 24rem;
+}
+
+.max-w-xs {
+  max-width: 20rem;
 }
 
 .flex-col {
@@ -698,12 +718,24 @@ body {
   gap: 1.75rem;
 }
 
+.gap-40 {
+  gap: 10rem;
+}
+
 .rounded-2xl {
   border-radius: 1rem;
 }
 
+.rounded-xl {
+  border-radius: 0.75rem;
+}
+
 .border-2 {
   border-width: 2px;
+}
+
+.border-\[1px\] {
+  border-width: 1px;
 }
 
 .border-lightred {
@@ -711,9 +743,24 @@ body {
   border-color: rgb(255 13 56 / var(--tw-border-opacity));
 }
 
+.border-\[\#595959\] {
+  --tw-border-opacity: 1;
+  border-color: rgb(89 89 89 / var(--tw-border-opacity));
+}
+
 .bg-lightred {
   --tw-bg-opacity: 1;
   background-color: rgb(255 13 56 / var(--tw-bg-opacity));
+}
+
+.bg-darkgray {
+  --tw-bg-opacity: 1;
+  background-color: rgb(39 39 39 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#454545\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(69 69 69 / var(--tw-bg-opacity));
 }
 
 .py-4 {
@@ -729,6 +776,21 @@ body {
 .px-8 {
   padding-left: 2rem;
   padding-right: 2rem;
+}
+
+.py-20 {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.py-3 {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+
+.px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 .pt-\[26px\] {
@@ -865,9 +927,35 @@ body {
   transition: 0.3s all ease;
 }
 
+.placeholder\:italic::-moz-placeholder {
+  font-style: italic;
+}
+
+.placeholder\:italic::placeholder {
+  font-style: italic;
+}
+
 .hover\:text-darkred:hover {
   --tw-text-opacity: 1;
   color: rgb(215 0 38 / var(--tw-text-opacity));
+}
+
+.focus\:border:focus {
+  border-width: 1px;
+}
+
+.focus\:border-lightred:focus {
+  --tw-border-opacity: 1;
+  border-color: rgb(255 13 56 / var(--tw-border-opacity));
+}
+
+.focus\:outline-none:focus {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
+.focus\:outline:focus {
+  outline-style: solid;
 }
 
 @media (max-width: 992px) {
@@ -930,6 +1018,19 @@ body {
 
   .md\:max-w-full {
     max-width: 100%;
+  }
+
+  .md\:flex-col {
+    flex-direction: column;
+  }
+
+  .md\:gap-10 {
+    gap: 2.5rem;
+  }
+
+  .md\:py-10 {
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
   }
 
   .md\:pt-12 {
